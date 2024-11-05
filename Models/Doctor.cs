@@ -16,4 +16,6 @@ public partial class Doctor
     public string Schedule { get; set; } = null!;
 
     public virtual ICollection<Appoinment> Appoinments { get; set; } = new List<Appoinment>();
+
+    public virtual ICollection<Prescription> Prescriptions { get; set; } = new List<Prescription>();
 }
